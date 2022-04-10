@@ -17,12 +17,9 @@ function LatestUsers() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setUsersList(data);
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch((err) => {});
   }, []);
 
   return (

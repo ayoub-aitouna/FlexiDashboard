@@ -68,7 +68,6 @@ function Main() {
   };
   const list = (data) => {
     const list = [0, 0, 0, 0, 0, 0];
-    console.log(data.length);
     for (let i = 0; i < data.length; i++) {
       list.push(data[i].price == null ? 0 : data[i].price);
     }
@@ -86,9 +85,7 @@ function Main() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setSub(data);
-        console.log(list(data));
         const options = {
           chart: {
             height: 420,

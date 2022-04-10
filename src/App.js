@@ -35,7 +35,6 @@ function App() {
 
   const ReadCoockie = async () => {
     const user = Cookies.get("accesToken");
-    console.log(user);
     if (user) {
       Login();
     }
@@ -78,15 +77,12 @@ function MainPage({ auth }) {
   const toggleSidebarMobileHamburger = useRef();
   const toggleSidebarMobileClose = useRef();
   const toggelBar = () => {
-    console.log(sidebar);
-
     sidebar.current.classList.toggle("hidden");
     sidebarBackdrop.current.classList.toggle("hidden");
 
     toggleSidebarMobileHamburger.current.classList.toggle("hidden");
     toggleSidebarMobileClose.current.classList.toggle("hidden");
   };
-  console.log(auth);
   return auth ? (
     <>
       <div

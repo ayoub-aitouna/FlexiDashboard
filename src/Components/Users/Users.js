@@ -19,7 +19,6 @@ function Users() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setUsersList(data);
       })
       .catch((err) => {
