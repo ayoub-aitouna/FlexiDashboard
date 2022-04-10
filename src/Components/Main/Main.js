@@ -7,6 +7,7 @@ import {
   LatestTransactions,
   Footer,
   Acquisition_Overview,
+  Loading,
 } from "../index";
 import { BaseUrl, MonthsNames } from "../../config.js";
 

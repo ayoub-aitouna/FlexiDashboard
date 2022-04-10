@@ -24,6 +24,7 @@ function Content() {
     Email: "",
     Password: "",
   });
+  const [loading, setloading] = useState(false);
 
   const state = useSelector((state) => state.User);
 
@@ -70,7 +71,7 @@ function Content() {
           </a>
           <div className=' flex  flex-row items-top justify-center'>
             <form
-              className=' flex flex-col gap-5  '
+              className=' flex flex-col justify-start items-start gap-5  '
               action=''
               onSubmit={(e) => loginSubmite(e)}>
               <h1 className='font-bold ' style={{ "font-size": "32.39px" }}>
