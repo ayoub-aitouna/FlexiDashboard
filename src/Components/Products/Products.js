@@ -1,11 +1,10 @@
 import React from "react";
-import under_construction from "../../Assets/img/under_construction.png";
 function products() {
   return (
-    <div className=' pr-20 w-screen flex flex-col items-center justify-center font-bold text-2xl text-gray-500'>
+    <div className='  w-screen flex flex-col items-center justify-center font-bold text-2xl text-gray-500'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
-        className='h-1/2'
+        className='h-1/2 w-2/3 '
         viewBox='0 0 1177.82 724.47'>
         <title>under construction</title>
         <path

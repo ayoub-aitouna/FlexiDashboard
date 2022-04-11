@@ -187,12 +187,15 @@ function Main() {
               <div className='bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8  2xl:col-span-2 '>
                 <div className='flex items-center justify-between mb-4'>
                   <div className='flex-shrink-0 flex flex-row gap-5 items-center'>
-                    <span className='text-2xl sm:text-3xl leading-none font-bold text-black tracking-wider'>
-                      {prices} ريال
-                    </span>
-                    <h3 className='text-base font-normal text-gray-300 tracking-wider'>
-                      اشتراكات هذا الأسبوع
-                    </h3>
+                    <div className='flex flex-col md:flex-row items-start gap-5 md:items-center'>
+                      <p className='text-2xl sm:text-3xl leading-none font-bold text-black tracking-wider'>
+                        {prices} ريال
+                      </p>
+                      <h3 className='text-base font-normal text-gray-300 tracking-wider'>
+                        اشتراكات هذا الأسبوع
+                      </h3>
+                    </div>
+
                     <div className='flex items-center justify-center text-sm flex-1 text-green-500 bg-green-50 px-2 py-2 rounded-md font-bold'>
                       {Persentage(Sub)}%
                       <svg

@@ -65,15 +65,15 @@ function Content() {
   return (
     <>
       <div className='grid grid-cols-1 xl:grid-cols-2 xl:gap-4  gap-3 h-screen'>
-        <div className='bg-light_gray h-full grid grid-rows-[1fr_2fr]  gap-3 px-20'>
+        <div className='bg-light_gray   overflow-hidden h-full grid grid-rows-[1fr_2fr]  gap-3   md:px-20'>
           <a
             href='/'
             className='text-xl font-bold flex items-center lg:ml-2.5 h-full justify-center'>
             <img src={logo} className='h-12 mr-2' alt='Windster Logo' />
           </a>
-          <div className=' flex  flex-row items-top justify-center'>
+          <div className=' flex flex-row items-top justify-center w-full '>
             <form
-              className=' flex flex-col justify-start items-start gap-5  '
+              className=' flex flex-col  justify-start items-center md:items-start gap-5  '
               action=''
               onSubmit={(e) => loginSubmite(e)}>
               <h1 className='font-bold ' style={{ "font-size": "32.39px" }}>
@@ -91,7 +91,7 @@ function Content() {
                 onChange={(e) => {
                   setlogininfo({ ...loginInfo, Email: e.target.value });
                 }}
-                className='h-14 w-96 px-5 rounded-lg border-2 border-border_color'
+                className='h-14 w-full px-5 rounded-lg border-2 border-border_color'
                 placeholder='بريد المستخدم'
               />
               <input

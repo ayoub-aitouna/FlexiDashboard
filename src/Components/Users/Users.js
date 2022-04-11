@@ -27,7 +27,7 @@ function Users() {
   }, []);
   return (
     <>
-      <div className='w-full h-full  relative  left-0  lg:mr-64'>
+      <div className='h-fit w-screen md:w-full  bg-gray-50 relative  left-0  lg:mr-64  overflow-hidden'>
         <div className='flex items-start  mb-4 flex-col mr-3'>
           <h3 className='text-xl font-bold leading-none text-gray-900  p-4 sm:p-6 '>
             المستخدمين
@@ -57,7 +57,7 @@ function Users() {
             />
           </div>
         </div>{" "}
-        <div className='flow-root'>
+        <div className='flow-root w-full overflow-auto'>
           <table className='min-w-full divide-y divide-gray-200'>
             <thead className='bg-gray-50'>
               <tr>
