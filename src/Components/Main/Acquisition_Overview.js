@@ -23,7 +23,9 @@ function Acquisition_Overview() {
         <div className='flow-root overflow-x-scroll h-full max-h-96 md:overflow-auto'>
           {sales.length == 0 ? (
             <div className='h-full w-full grid place-content-center'>
-              <h1 className='text-lg font-extrabold '>لايوجد بيانات</h1>
+              <h1 className='text-lg font-extrabold  tracking-widest '>
+                لايوجد بيانات
+              </h1>
             </div>
           ) : (
             <table className='min-w-full divide-y divide-gray-200 w-full'>

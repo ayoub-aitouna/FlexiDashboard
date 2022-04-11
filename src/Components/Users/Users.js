@@ -27,7 +27,7 @@ function Users() {
   }, []);
   return (
     <>
-      <div className='h-fit w-screen md:w-full  bg-gray-50 relative  left-0  lg:mr-64  overflow-hidden'>
+      <div className='h-fit w-screen md:w-full   relative  left-0  lg:mr-64  overflow-hidden'>
         <div className='flex items-start  mb-4 flex-col mr-3'>
           <h3 className='text-xl font-bold leading-none text-gray-900  p-4 sm:p-6 '>
             المستخدمين
