@@ -91,7 +91,7 @@ function Content() {
                 onChange={(e) => {
                   setlogininfo({ ...loginInfo, Email: e.target.value });
                 }}
-                className='h-14 w-full px-5 rounded-lg border-2 border-border_color'
+                className={`h-14 w-full px-5 rounded-lg border-2 border-gray-400 focus:border-border_color outline-none`}
                 placeholder='بريد المستخدم'
               />
               <input
@@ -103,7 +103,7 @@ function Content() {
                 onChange={(e) => {
                   setlogininfo({ ...loginInfo, Password: e.target.value });
                 }}
-                className='h-14 w-96 px-5 rounded-lg border-2 border-border_color'
+                className='h-14 w-96 px-5 rounded-lg border-2 border-gray-400 focus:border-border_color outline-none'
                 placeholder='كلمة المرور'
               />
               {message.length != 0 ? (
